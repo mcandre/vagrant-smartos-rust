@@ -6,7 +6,7 @@ launch-vm: Vagrantfile bootstrap.sh
 	vagrant up
 
 test: launch-vm
-	vagrant ssh -c "cd /vagrant && rustc hello.rs && ./hello"
+	vagrant ssh -c "cd /opt/vagrant && rustc hello.rs && ./hello"
 
 clean-vm:
 	-vagrant destroy -f

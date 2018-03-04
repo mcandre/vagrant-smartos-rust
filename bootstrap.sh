@@ -1,3 +1,3 @@
 #!/bin/sh
-sudo pkgin update && \
-    pkgin install rust
+pfexec pkgin -y update &&
+    pfexec pkgin -y install rust
